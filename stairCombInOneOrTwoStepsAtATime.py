@@ -18,5 +18,5 @@ def stairCombInOneOrTwoStepsAtATime(steps):
 	return curr
 
 for y in range(30):
-	print stairCombInOneOrTwoStepsAtATime(y)
+	print "%d:%d" % (y, stairCombInOneOrTwoStepsAtATime(y))
 
