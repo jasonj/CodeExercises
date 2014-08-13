@@ -46,7 +46,13 @@ void reverseWords(char str[]) {
 		m = (i == 0) ? 0 : so[i-1] + 1;
 		// get end offset for this word
 		// add one iteration to the end to account for last word
-		n = (i == k) ? len-1 : so[i]-1;
+		n = (i == k) ? len : so[i];
+		if (n > 0) {
+			n--;
+		}
+
+		printf("%d:%d\n", m, n);
+
 		// swap each letter in word
 		for (; m < n; m++, n--) {
 			temp = str[m];
