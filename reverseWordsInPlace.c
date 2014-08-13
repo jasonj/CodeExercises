@@ -1,3 +1,6 @@
+/*
+ * Exercises to do in-place reversals of strings, first letter by letter, then word by word
+ */
 #include <stdio.h>
 #include <string.h>
 
@@ -28,7 +31,7 @@ void reverseWords(char str[]) {
 	// reverse string first
 	reverseString(str);
 
-	// find all spaces in string, store their offsets
+	// find all spaces in string, and store their offsets
 	for (i = 0; i < len; i++) {
 		// if current char is a space, log its location
 		if (str[i] == ' ') {
