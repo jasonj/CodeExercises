@@ -51,7 +51,7 @@ void reverseWords(char str[]) {
 			n--;
 		}
 
-		printf("%d:%d\n", m, n);
+		//printf("%d:%d\n", m, n);
 
 		// swap each letter in word
 		for (; m < n; m++, n--) {
